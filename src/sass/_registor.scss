@@ -1,0 +1,118 @@
+@charset "utf-8";
+.header-registor{
+    width:$totalw;
+    height: 90px;
+    border-bottom: solid 2px #F5F5F5;
+    background: #fff;
+}
+.wrap-r{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header-registor .logo{
+    margin: 10px 0 0 0;
+    width: 350px;
+}
+.login-now{
+    font-size: 14px;
+    color: #AAA;
+    line-height: 24px;
+    float: right;
+    height: 24px;
+    margin-top: 50px;
+}
+.login-now a{
+    font-weight: 600;
+    margin-left: 4px;
+    color: #06c;
+}
+.registor-bg{
+    background: #FAFAFA url(../img/register_bg.png) repeat 50% 50%;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+}
+.registor-box{
+    background: rgba(0,0,0,0.15);
+    width: 860px;
+    height: 560px;
+    padding: 10px;
+    margin: 60px auto;
+}
+.registor-form{
+    background-color: #FFF;
+    display: block;
+    width: 820px;
+    height: 520px;
+    padding: 19px;
+    border: solid 1px #CCC;
+    overflow: hidden;
+}
+.form-title{
+    border-bottom: solid 1px #E6E6E6;
+    padding-left: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    padding-bottom: 13px;
+}
+.registor-form form{
+    margin-top: 40px;
+}
+.registor-form form p{
+    margin: 20px auto;
+    background-color: #FFF;
+    width: 398px;
+    height: 52px;
+    border: solid 1px #E6E6E6;
+}
+.registor-form form label{
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    width: 88px;
+    padding: 16px 0 16px 20px;
+    float: left;
+}
+.registor-form p input{
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    line-height: 28px;
+    width: 290px;
+    height: 28px;
+    padding: 0;
+    border: none 0;
+    margin-top: 12px;
+}
+.registor-form form p:last-child{
+    border: none;
+    margin-top: 30px;
+}
+.registor-form p .btn-submit{
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #FF500B;
+    width: 398px;
+    height: 42px;
+    border: solid 1px #e4393c;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+}
+#agree-box{
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    margin: 20px auto;
+    background-color: #FFF;
+}
+#agree-box .agreement{
+    color: #06C;
+}

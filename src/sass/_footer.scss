@@ -1,0 +1,129 @@
+$line_height:24px;
+
+.footer a{
+    color: #999;
+    font-size: $size;
+}
+.footer .t_wrap{
+    border: 1px solid #e3e3e3
+}
+.wrap .footer-ad{
+    width: 1000px;
+    height: 86px;
+    margin: 0 auto;
+}
+.wrap .footer-ad i{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 86px;
+    background: url(../img/cti.png) no-repeat;
+}
+@for $i from 1 through 4{
+    .wrap .footer-ad i:nth-of-type(#{$i}){
+        background-position: -$i*250+250px 0;
+    }
+}
+.footer_nav{
+    overflow: hidden;
+}
+.notice{
+    width: 300px;
+    height: 134px;
+    float: left;
+    border-right: 1px solid #eaeaea;
+    margin: 25px 0 25px 2%;
+}
+.notice ul li{
+    width: 250px;
+    line-height: $line_height;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: $line_height;
+    overflow: hidden;
+}
+.notice h2{
+    color: #666;
+    padding: 5px;
+    margin: 0px 0 5px;
+}
+.foot_link ul{
+    width: 823px;
+    float: left;
+    font-size: 0;
+    white-space: nowrap;
+    padding: 20px 0%;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.foot_link ul li{
+    font-size: $size;
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+.foot_link dl{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.foot_link dt{
+    color: #666;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+.foot_link dd{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    padding: 2px 5px;
+    overflow: hidden;
+    line-height: $line_height;
+}
+
+.b_wrap{
+    background-color: #343a3a;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.b_wrap p{
+    color: #eeeeee;
+    word-spacing: 5px;
+    padding-top: 15px;
+    font-size: $size;
+    text-align: center;
+}
+.b_wrap p a{
+    color: #eeeeee;
+}
+.b_wrap p:nth-of-type(1) a:hover{
+    text-decoration: underline;
+}
+.footer_img{
+    padding: 20px 0 10px;
+    width: 493px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer_img li{
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.footer_img li:last-child{
+    margin-right: 0;
+}
+.footer_img li a{
+    display: block;
+    width: 108px;
+    height: 40px;
+    background: url(../img/yangguang-footer.png);
+    background-repeat: no-repeat;
+}
+@for $i from 1 through 4{
+    .footer_img li:nth-of-type(#{$i}) a{
+        background-position: -$i*122+122px 0;
+    }
+}

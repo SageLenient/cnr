@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="" />
+		<meta name="keyword" content="" />
+		<meta name="anthor" content="" />
+		<title>央广购物购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<script src="script/thirdplugins/require.js" defer async="true" data-main='script/js/cart.js'></script>
+		<!--引入网页头部-->
+		<div class="top"></div>
+		<div class="header"></div>
+		<!--购物车-->
+		<div class="my-cart">
+			<div class="wrap">
+				<div class="cart-title">
+					<h3>我的购物车</h3>
+					<h5>查看购物车中所添加的商品；增加减少数量、并勾选确认想要购买的商品进入下一步操作。</h5>
+				</div>
+			</div>
+			<div class="wrap cart-all">
+				<div class="cart-list">
+					<div class="cart-thead">
+				      <ul class="columns">
+				        <li class="col-check">
+				        	<span class="checkbox-frame">
+				        		<label><input type="checkbox" class="checkbox-input" id="checkall-btn" autocomplete="off">全选</label>
+				        	</span>
+				        </li>
+				        <li class="col-goods">商品</li>
+				        <li class="col-quantity">数量</li>
+				        <li class="col-unitprice">单价</li>
+				        <li class="col-rebate">优惠</li>
+				        <li class="col-amount">金额</li>
+				      </ul>
+				    </div>
+				</div>
+				<div class="guanfang">
+					<span class="checkbox-frame">
+		        		<input type="checkbox" class="checkbox-input" id="checkall-btn" autocomplete="off">
+		        	</span><a href="https://www.cnrmall.com/store/1">官方店铺</a>
+		        </div>
+		        <!--购物车增加的一例(做格式添加新的商品)-->
+				<div class="cart-addli cart-li-0 clear">
+					<div class="addli-checkbox">
+						<span class="checkbox-frame">
+			        		<input type="checkbox" class="checkbox-input" autocomplete="off">
+			        	</span>
+					</div>
+		        	<div class="addli-img">
+		        		<a href="https://www.cnrmall.com/goods/5676">
+		        			<img src="https://pic3.cnrmall.com/image/c2/0f/c20f8aa90e78761632ddb9b45d51076b.jpg@160w_160h"/>
+		        		</a>
+		        	</div>
+		        	<div class="addli-main">
+		        		<div class="addgood-name">
+		        			<span class="name-num"></span><a href="https://www.cnrmall.com/goods/5676" target="_blank">格林燕山栗子鸡秒杀组 货号123420</a>
+				        </div>
+				        <div class="addgood-info">
+				        	<div class="buy-input clear">
+								<span class="buy-minus" style="cursor: not-allowed;">
+									<i class="i-minus"></i>
+								</span>
+								<input type="text" name="" id="Buycount" value="1" size="3" maxlength="6" autocomplete="off">
+								<span class="buy-add" style="cursor: pointer;">
+									<i class="i-add" style="color:#000;"></i>
+								</span>
+							</div>
+				        	<div class="info-price">
+				        		<span class="price-num">
+		                          	<span class="rmb">￥</span><span class="yuan">959</span><span class="pointer">.</span><span class="decimal">00</span>
+		                  		</span>
+				        	</div>
+				        	<div class="info-rebate">限时折扣</div>
+				        	<div class="info-money">
+				        		<em class="money-stat">
+		                          	<span class="rmb">￥</span><span class="yuan">959</span><span class="pointer">.</span><span class="decimal">00</span>
+            					</em>
+				        	</div>
+				        </div>
+				        <div class="addgood-remove"> <a class="icon-collect" href="javascript:;" title="移至收藏"><i class="i-like"></i></a><a href="javascript:;" class="icon-del" title="删除该商品"><i class="i-del"></i></a></div>
+		        	</div>
+				</div>
+				<!--购物车选中商品统计-->
+				<div class="cart-account">
+					<div class="choose-del">
+						<span class="checkbox-frame">
+			        		<label><input type="checkbox" class="checkbox-input" id="checkall-btn" autocomplete="off">全选</label>
+			        	</span>
+			        	<a href="javascript:;" id="a-del">删除</a>	
+					</div>
+					<div class="choose-summary">
+					  <dl class="sum-total">
+						<dt>选购商品种类：</dt>
+						<dd class="kinds-total"><span class="value">0</span>种</dd>
+						<dt>选购数量总计：</dt>
+						<dd class="quantity-total"><span class="value">0</span>件</dd>
+						<dt>商品金额总计：</dt>
+						<dd class="amount-total">
+							<strong class="value">
+								<span class="rmb">￥</span><span class="yuan">0</span><span class="pointer">.</span><span class="decimal">00</span>
+							</strong>
+						</dd>
+					  </dl>
+					</div>
+					<div class="account-form">
+			          <button id="cartSubmit" class="checkoutall">结算</button>
+			        </div>
+				</div>
+			</div>
+		</div>
+		<!--引入尾部-->
+		<div id="b_wrap"></div>
+	</body>
+
+</html>

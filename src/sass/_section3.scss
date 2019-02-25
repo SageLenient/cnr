@@ -1,0 +1,52 @@
+@charset "utf-8";
+.section_3{
+    overflow: hidden;
+    margin: 15px auto 0 auto;
+}
+.other-all{
+    width: 397px;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.s-3-class{
+    height: 26px;
+    padding: 16px 20px 16px 25px;
+}
+.s-3-class .s-3-title{
+    overflow-wrap: break-word;
+    float: left;
+    max-width: 100px;
+    height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFF;
+}
+.s-3-class-content{
+    background-color: #FFF;
+    overflow: hidden;
+    padding: 10px;
+}
+.s-3-class-content .fw-list-r{
+    width: 180px;
+}
+.s-3-class-content .fw-r-item{
+    width: 191px;
+}
+.s-3-class-content .fw-list-b{
+    width: 1000px;
+}
+.s-3-class-content .fw-list-b a:last-child{
+    margin: 0;
+}
+.other-m{
+    width: 396px;
+}
+.other-r{
+    width: 396px;
+    margin: 0;
+}

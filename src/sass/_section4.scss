@@ -1,0 +1,62 @@
+@charset "utf-8";
+.section_4{
+    overflow: hidden;
+    margin: 15px auto 0 auto;
+}
+.ulike-title{
+    overflow: hidden;
+    height: 35px;
+    padding: 0 0 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0) url(../img/下载.png) repeat-x scroll 0 18px;
+    font-size: 24px;
+    line-height: 35px;
+}
+.ulike-title h3{
+    display: inline;
+    padding: 0 50px;
+    background-color: #f2f2f2;
+    font-family: fzzhengheis-el-gbregular;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+}
+.ulike-content ul{
+    margin-left: -10px;
+}
+.ulike-content .ulike-goods{
+    float: left;
+    margin: 0 0 10px 10px;
+}
+.ulike-goods a{
+    display: block;
+    overflow: hidden;
+    width: 224px;
+    height: 305px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #FFF;
+    background-color: #FFF;
+}
+.ulike-goods a:hover{
+    border: 1px solid #FF0000;
+}
+.ulike-goods a img{
+    display: inline-block;
+    width: 224px;
+    height: 224px;
+    background-color: #f7f7f7;
+}
+.ulike-introduce{
+    padding: 10px;
+    text-align: left;
+}
+.ulike-introduce .ulike-goods-name{
+    overflow: hidden;
+    height: 36px;
+    margin-bottom: 5px;
+}
+.ulike-introduce .ulike-goods-price{
+    font-size: 12px;
+    color: #f10214;
+}

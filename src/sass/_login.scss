@@ -1,0 +1,237 @@
+@charset "utf-8";
+.header-login{
+    height: 90px;
+    border-bottom: solid 2px #F5F5F5;
+    margin: 5px auto 0 auto;
+    background-color: #FFF;
+    position: relative;
+}
+.login-wrap{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.login-logo{
+    margin: 10px 0 0 0;
+    width: 350px;
+    height: 68px;
+    float: left;
+    position: relative;
+}
+.login-logo img{
+    width: 240px;
+    height: 68px;
+}
+.login-logo span{
+    display: block;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333;
+    font-weight: normal;
+}
+.login-tips{
+    background: #fff8f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center
+}
+.tips-info{
+    display: inline-block;
+    width: 90%;
+}
+.i-tips{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(../img/login_pic.png) no-repeat -150px -250px;
+}
+.tips-info p{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #999;
+}
+.login-content{
+    width: 100%;
+    height: 480px;
+    background: #e93854;
+    margin-bottom: 100px;
+}
+.login-banner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 480px;
+    background: #e93854;
+}
+.login-banner>div{
+    position: relative;
+    z-index: 100;
+    height: 480px;
+    background: url(../img/login_img.jpg) no-repeat 0 0
+}
+.login-frame{
+    position: relative;
+    background-color: #FFF;
+    width: 346px;
+    padding: 0;
+    margin-top: 10px;
+    float: right;
+    overflow: hidden;
+    z-index: 110;
+}
+.login-nav{
+    border-bottom: solid 1px #F4F4F4;
+}
+.login-nav li{
+    float: left;
+    width: 50%;
+    height: 54px;
+}
+.login-nav li a{
+    display: block;
+    height: 18px;
+    text-align: center;
+    margin: 18px 0;
+    border-right: solid 1px #F4F4F4;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    color: #666;
+    line-height: 18px;
+}
+.login-nav .longin-active a{
+    color: #E4393C;
+    font-weight: 700;
+}
+.form-box{
+    height: 258px;
+    margin: 20px;
+}
+.form-box form{
+    width: 306px;
+}
+.form-box .form-item{
+    width: 304px;
+    height: 38px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-bottom: 22px;
+}
+.form-item label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(../img/login_pic.png) no-repeat;
+}
+@for $i from 1 through 3{
+    .form-item:nth-of-type(#{$i}) label{
+        background-position: 48px-48*$i -110px;
+    }
+}
+.form-item>input{
+    overflow: hidden;
+    float: none;
+    width: 254px;
+    height: 18px;
+    min-height: 18px;
+    padding: 10px 0 10px 50px;
+    border: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777;
+    background-color: #FFF;
+    vertical-align: top;
+    display: inline-block;
+}
+.verify-code{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.verify-code img{
+    height: 38px;
+}
+.verify-code>a{
+    text-align: center;
+    line-height: 16px;
+    padding: 3px 0;
+    float: right;
+    width: 50px;
+    display: block;
+    background-color: #EEE;
+}
+.login-auto{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666;
+}
+.login-click{
+    margin-bottom: 10px;
+}
+.login-btn{
+    position: relative;
+    width: 99%;
+    height: 32px;
+    margin: 0 auto;
+    border: 1px solid #cb2a2d
+}
+#login-submit{
+    display: block;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #e85356;
+    background: #e4393c;
+    font-family: 'Microsoft YaHei';
+    font-size: 20px;
+    color: #fff;
+}
+.login-reg-box{
+    padding: 0 20px;
+    border-top: 1px solid #F4F4F4;
+    background-color: #FCFCFC;
+    line-height: 50px;
+}
+.login-reg-box li a{
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+    color: #666;
+}
+.weixin-l span{
+    color: #666;
+    font-size: 12px;
+}
+.login-reg-box li i{
+    position: absolute;
+    left: 0;
+    top: 16px;
+    display: block;
+    float: left;
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+    background: url(../img/login_pic.png) no-repeat;
+}
+.login-reg-box li .i-weixin{
+    background-position: -120px -250px;
+}
+.registor-r .reg-link a{
+    color: #b61d1d;
+    font-size: 14px;
+}
+.login-reg-box li .i-reg{
+    background-position: -180px -250px;
+}

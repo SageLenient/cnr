@@ -1,0 +1,243 @@
+@charset "utf-8";
+.cart-title{
+    display: block;
+    height: 50px;
+    padding: 15px 0;
+    width: $totalw;
+    margin: 0 auto;
+}
+.cart-title h3{
+    color: #616161;
+    font: lighter 16px/30px arial,"microsoft yahei";
+}
+.cart-title h5{
+    font: 12px/20px arial,"microsoft yahei";
+    color: #BFBFBF;
+}
+.cart-thead{
+    height: 30px;
+    padding: 4px 0;
+    border: solid 1px #E9E9E9;
+    background-color: #F3F3F3;
+}
+.cart-thead ul li{
+    float: left;
+    color: #212121;
+    line-height: 30px;
+}
+.checkbox-frame .checkbox-input{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.columns .col-check{
+    width: 90px;
+    padding-left: 18px;
+}
+.columns .col-goods {
+    width: 480px;
+    text-indent: 12px;
+}
+.columns .col-quantity {
+    width: 166px;
+    text-indent: 70px;
+}
+.columns .col-unitprice {
+    width: 175px;
+    padding-right: 15px;
+    text-align: right;
+}
+.columns .col-rebate {
+    width: 78px;
+    text-indent: 30px;
+}
+.columns .col-amount {
+    width: 150px;
+    text-align: right;
+}
+.guanfang{
+    height: 48px;
+    padding: 0 20px;
+    border-bottom: solid 2px #AAAAAA;
+    line-height: 48px;
+}
+.guanfang a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+}
+.cart-addli{
+    position: relative;
+    padding: 20px 19px 25px 19px;
+    border-style: solid;
+    border-color: #F1F1F1;
+    border-width: 0 1px 1px;
+}
+.addli-checkbox{
+    float: left;
+    margin-right: 5px;
+}
+.addli-img{
+    float: left;
+    border: solid 1px #E1E1E1;
+    width: 80px;
+    height: 80px;
+}
+.addli-img a{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.addli-img a img{
+    width: $totalw;
+    height: $totalw;
+}
+.addli-main{
+    display: block;
+    width: 1030px;
+    float: left;
+    margin: 0 0 0 15px;
+    overflow: hidden;
+}
+.addli-main .addgood-name{
+    height: 20px;
+    font-family: "microsoft yahei";
+    font-size: 13px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+.addgood-info{
+    position: relative;
+    width: 98%;
+    margin-left: 2%;
+    height: 72px;
+    vertical-align: sub;
+}
+.addgood-info .buy-input{
+    margin-left: 45%;
+    float: left;
+}
+.info-price{
+    width: 210px;
+    padding-right: 25px;
+    text-align: right;
+    font-family: Tahoma;
+    line-height: 26px;
+    float: left;
+}
+.info-rebate{
+    text-align: center;
+    padding: 1px 4px;
+    border-radius: 2px;
+    background-color: #E4393C;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFF;
+    display: inline-block;
+    margin-top: 5px;
+}
+.info-money{
+    line-height: 26px;
+    color: #E4393C;
+    display: inline-block;
+    float: right;
+}
+.info-money .yuan{
+    font-size: 14px;
+}
+.info-money span{
+    font-weight: 700;
+    font-family: Verdana, Tahoma;
+}
+.addgood-remove{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 18px;
+    padding: 4px 12px 2px 0;
+    background-color: #F5F5F5;
+}
+.addgood-remove i{
+    font-family: myfont;
+    font-size: 18px;
+    vertical-align: top;
+    color: #AAA;
+}
+.addgood-remove .i-like::before{
+    content: "\f006";
+}
+.addgood-remove a{
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    margin-left: 12px;
+    line-height: 18px;
+}
+.addgood-remove .i-del::before{
+    content: "\f014";
+}
+.cart-account{
+    position: relative;
+    background-color: #EEE;
+    height: 56px;
+    border-bottom: solid 1px #E1E1E1;
+    line-height: 56px;
+    margin: 20px 0;
+}
+.cart-account .choose-del{
+    float: left;
+    padding-left: 20px;
+    width: 190px;
+    color: #222;
+}
+.choose-del .checkbox-frame{
+    margin-right: 30px;
+}
+.cart-account .choose-summary{
+    float: left;
+    width: 820px;
+}
+.choose-summary dl{
+    display: block;
+    float: right;
+    height: 56px;
+}
+.choose-summary dl dt,.choose-summary dl dd{
+    float: left;
+}
+.choose-summary dd{
+    margin-right: 30px;
+}
+.kinds-total span, .quantity-total span{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #000;
+}
+.cart-account .account-form{
+    float: right;
+}
+#cartSubmit{
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    height: 56px;
+    border: none 0;
+    font-size: 16px;
+    line-height: 56px;
+    font-weight: 600;
+}
+.amount-total strong{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #E4393C;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="" />
+		<meta name="keyword" content="" />
+		<meta name="anthor" content="" />
+		<title>央广购物详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/details.js"></script>
+		<div class="top"></div>
+		<!--商品所在分类信息-->
+		<div class="goods-detail">
+			<div class="wrap goods-class">
+				<i class="goods-home"></i>
+				<a href="javascript:;"><span>食品饮料</span></a>
+				<span class="arrow-right">></span>
+				<a href="javascript:;"><span>即食罐头</span></a>
+				<span class="arrow-right">></span>
+				<a href="javascript:;"><span>肉类罐头</span></a>
+				<span class="arrow-right">></span>
+				<span id="goods-last">格林燕山栗子鸡秒杀组</span>
+			</div>
+		</div>
+		<!--购买界面-->
+		<div class="goods-shop">
+			<div class="wrap details-shop">
+				<!--放大镜-->
+				<div id="Loupe">
+					<div id="spic">
+						<img src="https://pic4.cnrmall.com/image/c2/0f/c20f8aa90e78761632ddb9b45d51076b.jpg@360w_360h" alt="">
+						<div id="sf"></div>
+					</div>
+					<div id="bf">
+						<img src="https://pic4.cnrmall.com/image/c2/0f/c20f8aa90e78761632ddb9b45d51076b.jpg" alt="" id="bpic">
+					</div>
+					<div id="ulist">
+						<a href="javascript:;" id="left">&lt;</a>
+						<div id="list">
+							<ul>
+								<li>
+									<a href="javascript:;"><img src="https://pic3.cnrmall.com/image/c2/0f/c20f8aa90e78761632ddb9b45d51076b.jpg@60w_60h" alt=""></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="https://pic1.cnrmall.com/image/a0/0a/a00aae2332372d63e14852154c485a2a.jpg@60w_60h" alt=""></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="https://pic5.cnrmall.com/image/ec/ae/ecaee17cbbaaebc3a61f763d909a3a17.jpg@60w_60h" alt=""></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="https://pic3.cnrmall.com/image/19/93/199364cf83fbb0d19df9f2b17183bfc7.jpg@60w_60h" alt=""></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="https://pic5.cnrmall.com/image/14/ea/14ea108dffa6bff1fcb823218c2c223b.jpg@60w_60h" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;" id="right">&gt;</a>
+					</div>
+
+				</div>
+				<!--商品信息简介-->
+				<div class="goods-share">
+					<a href="javascript:;" class="favorite"><i class="i-like"></i>收藏商品<em class="Likenum">0</em> </a>
+					<div class="share"><i class="i-share"></i>分享 <i class="i-share-down"></i></div>
+					<a href="javascript:;" class="buy-qrcode"><i class="i-qrcode"></i>移动端购买</a>
+				</div>
+				<div class="goods-summary">
+					<div class="sum-title">
+						<h1>格林燕山栗子鸡秒杀组</h1>
+						<strong>粟子绵软  鸡肉嫩烂  味道香浓</strong>
+					</div>
+					<div class="sum-sale-off clear">
+						<div class="sale-name"><i class="sum-shopping-bag"></i>促销 - 限时折扣</div>
+						<div class="sale-time"><i class="sum-clock"></i>距结束<time></time></div>
+					</div>
+					<!-- S 商品价格 -->
+					<div class="sum-price">
+						<dl>
+							<dt>价格</dt>
+							<dd>
+								<span class="price-real">
+				        	<strong id="price-now">
+				            	<span class="rmb">￥</span><span class="yuan">164</span><span class="pointer">.</span><span class="decimal">00</span>
+							</strong>
+							<del id="price-original">原价：
+				            	<span class="rmb">￥</span><span class="yuan">199</span><span class="pointer">.</span><span class="decimal">00</span>
+				            </del>
+								</span>
+							</dd>
+						</dl>
+					</div>
+					<div class="sum-logistics">
+						<dl class="logistics-area">
+							<dt class="sum-dt">物流</dt>
+							<dd>
+								<span class="logistics-peis">配送至</span>
+								<div class="area-choose">
+									<div class="area-text">请选择地区</div>
+									<i class="arrow"></i>
+								</div>
+							</dd>
+						</dl>
+						<dl class="logistics-area">
+							<dt class="sum-dt">服务</dt>
+							<dd>
+								<span class="logistics-peis">由<em class="pingtai">央广购物</em>发货，并提供售后服务。</span>
+							</dd>
+						</dl>
+					</div>
+					<div class="good-buy">
+						<!--商品购买数据-->
+						<div class="buy-data">
+							<dl>
+								<dt class="sum-dt">数量</dt>
+								<dd>
+									<div class="buy-input">
+										<span class="buy-minus" style="cursor: not-allowed;">
+											<i class="i-minus"></i>
+										</span>
+										<input type="text" name="" id="Buycount" value="1" size="3" maxlength="6" autocomplete="off">
+										<span class="buy-add" style="cursor: pointer;">
+											<i class="i-add" style="color:#000;"></i>
+										</span>
+										　组
+									</div>
+									<div class="goods-stock">（库存<span>535</span>组）</div>
+									<div class="goods-limit">每人限购<span class="limit-counts">10</span>组</div>
+								</dd>
+							</dl>
+						</div>
+						<!--购买和加入购物车按钮组-->
+						<div class="goods-btns">
+							<div class="shop-btns">
+								<a href="javascriipt:;" id="buy-btn">立即购买</a>
+								<a href="javascriipt:;" id="add-btn"><i class="add-btn-shopcar"></i>加入购物车</a>
+							</div>
+						</div>
+					</div>
+					<div class="goods-serve">
+						<dl>
+							<dt>服务承诺</dt>
+							<dd>
+						      	<span>
+						              <img src="https://statics.cnrmall.com/public/img/cti/7day30.png">
+						              <a href="javascript:;">15天无理由退换货，30天只换不修</a>
+						      	</span>
+						    </dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+	</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="" />
+		<meta name="keyword" content="" />
+		<meta name="anthor" content="" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	</head>
+
+	<body>
+		<script src="script/thirdplugins/require.js" data-main='script/js/login.js'></script>
+		<div class="header-login">
+			<header class="login-wrap">
+				<h1 class="login-logo"><a href="javascript:;"><img src="img/2c6ce4ec89967ee42ef77fb0b524fc0c.png"></a><span>欢迎登录</span></h1>
+			</header>
+		</div>
+		<!--登录界面logo-->
+		<div class="login-tips">
+			<div class="tips-inner">
+				<div class="tips-info"><i class="i-tips"></i>
+					<p>为确保您账户的安全及正常使用，依《网络安全法》相关要求，会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+				</div>
+			</div>
+		</div>
+		<!--登录内容区-->
+		<div class="login-content">
+			<div class="login-wrap">
+				<div class="login-banner">
+					<div id="banner-bg"></div>
+				</div>
+				<!--用户登录表单-->
+				<div class="login-frame">
+					<div class="login-module">
+						<!--表头-->
+						<ul class="login-nav clear">
+							<li class="longin-active"><a href="javascript">用户登录</a></li>
+							<li><a href="javascript:;">手机动态码登录</a></li>
+						</ul>
+						<!--表单-->
+						<div class="form-box">
+				            <form id="loginform" class="login-form" name="loginform" method="post">
+				                <div class="form-item">
+				                    <label title="登录账号"></label>
+				                	<input type="text" autocomplete="off" placeholder="手机号/会员名/邮箱">
+				                </div>
+				                <div class="form-item">
+				                    <label title="登录密码"></label>
+				                    <input type="password" autocomplete="off" placeholder="输入账户密码">
+				                </div>
+				                <div class="form-item">
+				                    <label title="验证码"></label>
+				                    <input type="text" maxlength="4" placeholder="输入验证码" autocomplete="off">
+				                    <div class="verify-code"><img src="img/getcaptcha.jpg"><a href="JavaScript:;" style="font-size: 12px;">看不清<br>换一张</a></div>
+				                </div>
+				                <div class="login-auto">
+				                    <div class="auto-box">
+				                    	<span>
+				                    		<input type="checkbox" value="1" class="checkbox" id="auto-login" name="auto-login" style="display: inline-block;vertical-align: middle;margin-right: 5px;">七天自动登录<em style="margin-left: 5px; color: rgb(255, 50, 56); display: none;">请勿在公用电脑上使用</em>
+				                    	</span>
+				                    	<span>
+				                    		<a href="javascript:;">忘记密码</a>		
+				                    	</span>
+				                    </div>
+				                </div>
+				                <div class="login-click">
+				                    <div class="login-btn">
+				                    	<button class="btn-img" id="login-submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+				                    </div>
+				                </div>
+				            </form>
+			            </div>
+					</div>
+					<!--微信登录和免费注册-->
+					<div class="login-reg-box">
+						<ul>
+							<li class="left weixin-l">
+								<a href="javascript:;" title="微信账号登录" id="weixinlogin"><i class="i-weixin"></i><span>微信</span></a><span>　|</span>
+							</li>
+							<li class="right registor-r">
+								<div class="reg-link"><a title="" href="javascript:;" target="_blank"><i class="i-reg"></i>立即注册</a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b_wrap"></div>
+	</body>
+
+</html>
