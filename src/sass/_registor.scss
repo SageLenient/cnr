@@ -59,6 +59,7 @@
 }
 .registor-form form{
     margin-top: 40px;
+    position: relative;
 }
 .registor-form form p{
     margin: 20px auto;
@@ -115,4 +116,25 @@
 }
 #agree-box .agreement{
     color: #06C;
+}
+.hint{
+    width: 146px;
+    height: 28px;
+    position: absolute;
+    right: 60px;
+}
+.hint1{
+    top: 12px;
+}
+.hint2{
+    top: 86px;
+}
+.hint3{
+    top: 160px;
+}
+.hint4{
+    top: 234px;
+}
+.hint5{
+    top: 296px;
 }

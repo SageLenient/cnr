@@ -14,28 +14,33 @@
 		<div class="header-registor">
 			<header class="wrap-r">
 				<h1 class="logo"><a href="https://www.cnrmall.com/"><img src="https://pic1.cnrmall.com/image/2c/6c/2c6ce4ec89967ee42ef77fb0b524fc0c.png" alt="央广购物"></a></h1>
-				<div class="login-now">我已经注册，现在就<a href="" class="register">登录</a></div>
+				<div class="login-now">我已经注册，现在就<a href="login.html" class="register">登录</a></div>
 			</header>
 		</div>
 		<div class="registor-bg">
 			<div class="registor-box">
 				<div class="registor-form">
 					<div class="form-title">免费注册</div>
-					<form action="" method="post">
+					<form action="" method="post" id="formcn">
 						<p>
 							<label for="">用户名称：</label><input type="text" name="username" id="username" />
+							<span class="hint hint1"></span>
 						</p>
 						<p>
 							<label for="">手机号码：</label><input type="tel" name="phone" id="phone" />
+							<span class="hint hint2"></span>
 						</p>
 						<p>
 							<label for="">邮箱账号：</label><input type="email" name="email" id="email" />
+							<span for="email" id="email-error" class="error"></span>
 						</p>
 						<p>
 							<label for="">设置密码：</label><input type="password" name="password" id="password" />
+							<span class="hint hint4"></span>
 						</p>
 						<div id="agree-box">
 							<input type="checkbox" checked class="checkbox" id="check-agree" name="check-agree">阅读并同意 <a class="agreement" href="javascript:;">《服务协议》</a>
+							<span class="hint hint5"></span>
 						</div>
 						<p>
 							<input type="button" class="btn-submit" value="点击注册"/>

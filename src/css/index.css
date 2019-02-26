@@ -46,6 +46,56 @@ a {
   text-decoration: none;
 }
 
+#floor {
+  width: 35px;
+  position: fixed;
+  top: 180px;
+  left: 50px;
+  border: 1px solid #ddd;
+  display: no ne;
+}
+
+#floor ul li {
+  width: 35px;
+  height: 32px;
+  border-bottom: 1px dotted #DDDDDD;
+  list-style: none;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 0;
+  background: #918888;
+  color: #fff;
+}
+
+#floor ul li span {
+  width: 35px;
+  height: 32px;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#floor ul li.last {
+  background: #5e4a4a;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#floor ul li.active span {
+  background: #c00;
+  color: #fff;
+  display: block;
+}
+
+#floor ul li:hover span {
+  background: #c00;
+  color: #fff;
+  display: block;
+}
+
 .top {
   width: 100%;
   background: #F5F5F5;
@@ -291,6 +341,10 @@ a {
   padding-left: 12px;
   height: 34px;
   line-height: 34px;
+}
+
+.menu li:hover {
+  background: #ccc;
 }
 
 .menu li > a {
@@ -559,6 +613,10 @@ a {
   height: 146px;
 }
 
+.cate-part-none {
+  display: none;
+}
+
 .section_1 {
   width: 100%;
   position: relative;
@@ -632,12 +690,17 @@ a {
   font-weight: 300;
 }
 
+.seckill_ppt {
+  position: absolute;
+}
+
 .seckill_contents {
   padding: 12px 0 13px;
   height: 225px;
   overflow: hidden;
   background: #fff;
   margin: 0 2px;
+  width: 1206px;
 }
 
 .seckill_list {
@@ -712,7 +775,7 @@ a {
   position: absolute;
   top: 50%;
   outline: 0;
-  z-index: 9999;
+  z-index: 150;
   margin-top: -31px;
   width: 28px;
   height: 62px;
@@ -2113,6 +2176,7 @@ a {
 
 .registor-form form {
   margin-top: 40px;
+  position: relative;
 }
 
 .registor-form form p {
@@ -2176,6 +2240,33 @@ a {
 
 #agree-box .agreement {
   color: #06C;
+}
+
+.hint {
+  width: 146px;
+  height: 28px;
+  position: absolute;
+  right: 60px;
+}
+
+.hint1 {
+  top: 12px;
+}
+
+.hint2 {
+  top: 86px;
+}
+
+.hint3 {
+  top: 160px;
+}
+
+.hint4 {
+  top: 234px;
+}
+
+.hint5 {
+  top: 296px;
 }
 
 .header-login {

@@ -64,14 +64,16 @@
     padding-top: 9px;
     font-weight: 300;
 }
-
-
+.seckill_ppt{
+    position: absolute;
+}
 .seckill_contents{
     padding: 12px 0 13px;
     height: 225px;
     overflow: hidden;
     background: #fff;
     margin: 0 2px;
+    width: 1206px;
 }
 .seckill_list{
     width: $totalw;
@@ -135,7 +137,7 @@
     position: absolute;
     top: 50%;
     outline: 0;
-    z-index: 9999;
+    z-index: 150;
     margin-top: -31px;
     width: 28px;
     height: 62px;

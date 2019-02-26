@@ -22,6 +22,9 @@
     height: 34px;
     line-height: 34px;
 }
+.menu li:hover{
+    background: #ccc;
+}
 .menu li>a{
     color: #fff;
     font-size: 14px;
@@ -255,4 +258,7 @@
     background: #D3D3D3;
     width: 240px;
     height: 146px;
+}
+.cate-part-none{
+    display: none;
 }

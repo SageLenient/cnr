@@ -6,6 +6,7 @@
 	<meta name="keyword" content="" />
 	<meta name="anthor" content="" />
 	<title>央广购物</title>
+	<link rel="icon" href="https://statics.cnrmall.com/public//img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<style type="text/css">
@@ -14,10 +15,10 @@
 </head>
 
 <body>
-<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main.js"></script>
+<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/index.js"></script>
 <!--页面顶部-->
 <!--top.html-->
-<div class="top"></div>
+<div class="top-index"></div>
 <!--页面导航-->
 	<div class="nav">
 		<div class="wrap">
@@ -28,7 +29,8 @@
 						<a href="javascript:;">休闲食品</a>
 						<span class="nav_menu_line">/</span>
 						<a href="javascript:;">即时罐头</a>
-						<div class="cate-part" cat_menu_id="2" style="top: 0px;">
+						<!--tab切换模板-->
+						<!--<div class="cate-part" style="top: 0px;">
 							<div class="cate-part-col1">
 								<div class="cate-detail">
 									<dl class="cate-detail-item">
@@ -73,7 +75,7 @@
 				
 									<dl class="cate-detail-item">
 										<dt class="cate-detail-tit"> 
-				               <			<a target="_blank" href="javascript:;">方便食品<i class="fa fa-angle-right m-l-5 m-r-0" aria-hidden="true"></i></a>
+				               			<a target="_blank" href="javascript:;">方便食品<i class="fa fa-angle-right m-l-5 m-r-0" aria-hidden="true"></i></a>
 										</dt>
 										<dd class="cate-detail-con">
 											<a target="_blank" href="javascript:;">方便面/粉/粥</a>
@@ -92,7 +94,7 @@
 									<a title="" href="javascript:;" target="_blank"> <img src="https://pic.cnrmall.com/image/49/0a/490a8253d2a111c6aab75a5182c087b4.jpg"> </a>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					</li>
 					<li>
 						<a href="javascript:;">水果</a>
@@ -224,7 +226,7 @@
 	            </div>
 	            <div class="timerdown right">
 	                <span class="tip">本场秒杀</span>
-	                <span class="timer" id="seckilltime"><span class="hours" data-cd-type="allHours">12</span><em>:</em><span class="mins" data-cd-type="minutes">33</span><em>:</em><span class="sec" data-cd-type="seconds">15</span></span>
+	                <span class="timer" id="seckilltime"><span class="hours" data-cd-type="allHours">10</span><em>:</em><span class="mins" data-cd-type="minutes">00</span><em>:</em><span class="sec" data-cd-type="seconds">00</span></span>
 	                <span class="tip">后结束</span>
 	            </div>
 	        </div>
@@ -232,9 +234,10 @@
 				<div class="seckill_list">
 					<!--秒杀区商品列表-->
 					<ul class="seckill_ppt">
-						<li class="sk_items">
+						<!--秒杀区模板-->
+						<!--<li class="sk_items">
 	                        <div class="sk_goods">
-	                            <a href="https://www.cnrmall.com/goods/9423" target="_blank" class="sk_link">
+	                            <a href="javascript:;" target="_blank" class="sk_link">
 	                                <img src="https://pic5.cnrmall.com/image/27/e4/27e42ada273c6acd87723c3788f48554.jpg">
 	                                <p class="sk_name">安瑞特 厨房不锈钢碗碟架 碗筷菜板沥水架</p>
 	                            </a>
@@ -248,29 +251,12 @@
 	                            	<span class="yuan">￥</span><span class="integer">69</span><span class="pointer">.</span><span class="decimal">00</span>
 	                            </span>
 	                        </p>
-	                    </li>
-	                    <li class="sk_items">
-	                        <div class="sk_goods">
-	                            <a href="https://www.cnrmall.com/goods/9423" target="_blank" class="sk_link">
-	                                <img src="https://pic5.cnrmall.com/image/27/e4/27e42ada273c6acd87723c3788f48554.jpg">
-	                                <p class="sk_name">安瑞特 厨房不锈钢碗碟架 碗筷菜板沥水架</p>
-	                            </a>
-	                            <span class="sk_shadow"></span>
-	                        </div>
-	                        <p class="sk_price">
-	                            <span class="price-new">
-	                            	<span class="yuan">￥</span><span class="integer">59</span><span class="pointer">.</span><span class="decimal">00</span>
-	                            </span>
-	                            <span class="price-original">
-	                            	<span class="yuan">￥</span><span class="integer">69</span><span class="pointer">.</span><span class="decimal">00</span>
-	                            </span>
-	                        </p>
-	                    </li>
+	                    </li>-->
 					</ul>
 					<!--控制秒杀商品列表左右箭头-->
 					<div class="sk_controls">
 						<div class="sk_direction">
-							<a class="sk_prev" href="javascript:;" style="display: block;">&lt;</a><a class="sk_next" href="javascript:;" style="display: block;">&gt;</a>
+							<a class="sk_prev" href="javascript:;" style="display: none;">&lt;</a><a class="sk_next" href="javascript:;" style="display: none;">&gt;</a>
 						</div>
 					</div>
 				</div>
@@ -488,7 +474,16 @@
 		</div>
 	</div>
 </div>
-
+<div id="floor">
+    <ul>
+        <li class="active last"><span>央广购物</span></li>
+        <li><span>秒杀专区</span></li>
+        <li><span>食品酒水</span></li>
+        <li><span>美妆家居</span></li>
+        <li><span>猜你喜欢</span></li>
+        <li class="last">顶部</li>
+    </ul>
+</div>
 <!--页面底部-->
 	<div class="footer">
 	</div>

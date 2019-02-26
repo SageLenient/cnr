@@ -1,8 +1,8 @@
 define(['config'],function(){
-	require(['jquery'], function($) {
+	require(['jquery'], function() {
 		$('#b_wrap').load('footer.html .b_wrap');
-		/*alert(1);
-		$("#formcn").validate({
+		
+		/*$("#formcn").validate({
 			rules: {
 				username: {
 					required: true,
@@ -10,7 +10,6 @@ define(['config'],function(){
 					maxlength: 20,
 				}
 			},
-
 			messages: {
 				username: {
 					required: "请输入用户名",
