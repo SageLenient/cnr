@@ -6,6 +6,7 @@
 		<meta name="keyword" content="" />
 		<meta name="anthor" content="" />
 		<title>免费注册</title>
+		<link rel="icon" href="https://statics.cnrmall.com/public//img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	</head>
@@ -21,7 +22,7 @@
 			<div class="registor-box">
 				<div class="registor-form">
 					<div class="form-title">免费注册</div>
-					<form action="" method="post" id="formcn">
+					<form action="http://10.31.162.68/cnrmall/php/registor.php" method="post" id="formcn">
 						<p>
 							<label for="">用户名称：</label><input type="text" name="username" id="username" />
 							<span class="hint hint1"></span>
@@ -32,7 +33,7 @@
 						</p>
 						<p>
 							<label for="">邮箱账号：</label><input type="email" name="email" id="email" />
-							<span for="email" id="email-error" class="error"></span>
+							<span class="hint hint3"></span>
 						</p>
 						<p>
 							<label for="">设置密码：</label><input type="password" name="password" id="password" />
@@ -43,7 +44,7 @@
 							<span class="hint hint5"></span>
 						</div>
 						<p>
-							<input type="button" class="btn-submit" value="点击注册"/>
+							<input type="submit" name="submit" class="btn-submit" value="点击注册"/>
 						</p>
 					</form>
 				</div>

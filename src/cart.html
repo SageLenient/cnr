@@ -16,6 +16,14 @@
 		<!--引入网页头部-->
 		<div class="top"></div>
 		<div class="header"></div>
+		<!--购物车为空时的弹框-->
+		<div class="ncc-null-shopping"><i class="ico"></i>
+		    <h4>您的购物车还没有商品</h4>
+		    <p>
+		    	<a class="btn btn-sm btn-success m-r-10" href="http://10.31.162.68/cnrmall/src/"><i class="fa fa-reply-all"></i>马上去购物</a> 
+		    	<a class="btn btn-sm btn-default" href="javascrit:;"><i class="fa fa-file-text"></i>查看自己的订单</a>
+		    </p>
+		</div>
 		<!--购物车-->
 		<div class="my-cart">
 			<div class="wrap">
@@ -30,7 +38,7 @@
 				      <ul class="columns">
 				        <li class="col-check">
 				        	<span class="checkbox-frame">
-				        		<label><input type="checkbox" class="checkbox-input" id="checkall-btn" autocomplete="off">全选</label>
+				        		<label><input type="checkbox" class="checkbox-input checkall-btn" id="checkall-btn1" autocomplete="off">全选</label>
 				        	</span>
 				        </li>
 				        <li class="col-goods">商品</li>
@@ -41,57 +49,59 @@
 				      </ul>
 				    </div>
 				</div>
-				<div class="guanfang">
+				<div class="guanfang check-choose">
 					<span class="checkbox-frame">
-		        		<input type="checkbox" class="checkbox-input" id="checkall-btn" autocomplete="off">
+		        		<input type="checkbox" class="checkbox-input check-li check-item" id="checkall-btn" autocomplete="off">
 		        	</span><a href="https://www.cnrmall.com/store/1">官方店铺</a>
 		        </div>
 		        <!--购物车增加的一例(做格式添加新的商品)-->
-				<div class="cart-addli cart-li-0 clear">
-					<div class="addli-checkbox">
-						<span class="checkbox-frame">
-			        		<input type="checkbox" class="checkbox-input" autocomplete="off">
-			        	</span>
+				<div id="cart-box">
+					<div class="cart-addli check-choose clear" style="display: none;">
+						<div class="addli-checkbox">
+							<span class="checkbox-frame">
+				        		<input type="checkbox" class="checkbox-input check-li" autocomplete="off">
+				        	</span>
+						</div>
+			        	<div class="addli-img">
+			        		<a href="https://www.cnrmall.com/goods/5676">
+			        			<img src="https://pic3.cnrmall.com/image/c2/0f/c20f8aa90e78761632ddb9b45d51076b.jpg@160w_160h"/>
+			        		</a>
+			        	</div>
+			        	<div class="addli-main">
+			        		<div class="addgood-name">
+			        			<span class="name-num"></span><a href="https://www.cnrmall.com/goods/5676" target="_blank">格林燕山栗子鸡秒杀组 货号123420</a>
+					        </div>
+					        <div class="addgood-info">
+					        	<div class="buy-input clear">
+									<span class="buy-minus" style="cursor: not-allowed;">
+										<i class="i-minus"></i>
+									</span>
+									<input type="text" name="" id="Buycount" value="0" oninput="value=value.replace(/[^\d]/g,'')" size="3" maxlength="6" autocomplete="off">
+									<span class="buy-add" style="cursor: pointer;">
+										<i class="i-add" style="color:#000;"></i>
+									</span>
+								</div>
+					        	<div class="info-price">
+					        		<span class="price-num">
+			                          	<span class="rmb">￥</span><span class="yuan">0</span><span class="pointer">.</span><span class="decimal">00</span>
+			                  		</span>
+					        	</div>
+					        	<div class="info-rebate">限时折扣</div>
+					        	<div class="info-money">
+					        		<em class="money-stat">
+			                          	<span class="rmb">￥</span><span class="yuan">0</span><span class="pointer">.</span><span class="decimal">00</span>
+	            					</em>
+					        	</div>
+					        </div>
+					        <div class="addgood-remove"> <a class="icon-collect" href="javascript:;" title="移至收藏"><i class="i-like"></i></a><a href="javascript:;" class="icon-del" title="删除该商品"><i class="i-del"></i></a></div>
+			        	</div>
 					</div>
-		        	<div class="addli-img">
-		        		<a href="https://www.cnrmall.com/goods/5676">
-		        			<img src="https://pic3.cnrmall.com/image/c2/0f/c20f8aa90e78761632ddb9b45d51076b.jpg@160w_160h"/>
-		        		</a>
-		        	</div>
-		        	<div class="addli-main">
-		        		<div class="addgood-name">
-		        			<span class="name-num"></span><a href="https://www.cnrmall.com/goods/5676" target="_blank">格林燕山栗子鸡秒杀组 货号123420</a>
-				        </div>
-				        <div class="addgood-info">
-				        	<div class="buy-input clear">
-								<span class="buy-minus" style="cursor: not-allowed;">
-									<i class="i-minus"></i>
-								</span>
-								<input type="text" name="" id="Buycount" value="1" size="3" maxlength="6" autocomplete="off">
-								<span class="buy-add" style="cursor: pointer;">
-									<i class="i-add" style="color:#000;"></i>
-								</span>
-							</div>
-				        	<div class="info-price">
-				        		<span class="price-num">
-		                          	<span class="rmb">￥</span><span class="yuan">959</span><span class="pointer">.</span><span class="decimal">00</span>
-		                  		</span>
-				        	</div>
-				        	<div class="info-rebate">限时折扣</div>
-				        	<div class="info-money">
-				        		<em class="money-stat">
-		                          	<span class="rmb">￥</span><span class="yuan">959</span><span class="pointer">.</span><span class="decimal">00</span>
-            					</em>
-				        	</div>
-				        </div>
-				        <div class="addgood-remove"> <a class="icon-collect" href="javascript:;" title="移至收藏"><i class="i-like"></i></a><a href="javascript:;" class="icon-del" title="删除该商品"><i class="i-del"></i></a></div>
-		        	</div>
 				</div>
 				<!--购物车选中商品统计-->
 				<div class="cart-account">
 					<div class="choose-del">
 						<span class="checkbox-frame">
-			        		<label><input type="checkbox" class="checkbox-input" id="checkall-btn" autocomplete="off">全选</label>
+			        		<label><input type="checkbox" class="checkbox-input checkall-btn" id="checkall-btn2" autocomplete="off">全选</label>
 			        	</span>
 			        	<a href="javascript:;" id="a-del">删除</a>	
 					</div>

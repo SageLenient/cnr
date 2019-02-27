@@ -66,7 +66,7 @@
     font-weight: 600;
     color: #666;
 }
-.cart-addli{
+#cart-box .cart-addli{
     position: relative;
     padding: 20px 19px 25px 19px;
     border-style: solid;
@@ -240,4 +240,65 @@
     margin-right: 5px;
     font-size: 20px;
     color: #E4393C;
+}
+.ncc-null-shopping {
+    width: 480px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.ncc-null-shopping i.ico {
+    background: url(../img/cart_bg.png) no-repeat -100px -50px;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+}
+.ncc-null-shopping h4 {
+    font: lighter 22px/30px "microsoft yahei";
+    color: #777;
+    position: absolute;
+    z-index: 1;
+    top: 110px;
+    left: 180px;
+}
+.ncc-null-shopping p {
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    left: 180px;
+}
+.btn-success:hover {
+    background-color: #008A8A!important;
+    border-color: #008A8A!important;
+    color: #FFF!important;
+}
+.btn-default {
+    background-color: #B6C2C9;
+    border-color: #B6C2C9;
+    color: #FFF;
+}
+.btn-success {
+    background-color: #00ACAC!important;
+    border-color: #00ACAC!important;
+    color: #FFF !important;
+}
+.btn-sm{
+    border-radius: 3px!important;
+    font-size: 12px!important;
+    line-height: 1.5!important;
+    padding: 5px 10px!important;
+}
+.btn-sm i{
+    font-family: myfont;
+    margin-right: 6px;
+}
+.btn-success i::before{
+    content: "\f122";
+}
+.btn-default i::before{
+    content: "\f15c";
 }

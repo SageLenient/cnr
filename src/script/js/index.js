@@ -111,13 +111,13 @@ define(['config'],function(){
                         <div class="sk_goods">
                             <a href="javascript:;" target="_blank" class="sk_link">
                                 <img src="${value.url}">
-                                <p class="sk_name">安瑞特 厨房不锈钢碗碟架 碗筷菜板沥水架</p>
+                                <p class="sk_name">${value.title}</p>
                             </a>
                             <span class="sk_shadow"></span>
                         </div>
                         <p class="sk_price">
                             <span class="price-new">
-                            	<span class="yuan">￥</span><span class="integer">59</span><span class="pointer">.</span><span class="decimal">00</span>
+                            	<span class="yuan">￥</span><span class="integer">${value.price}</span><span class="pointer">.</span><span class="decimal">00</span>
                             </span>
                             <span class="price-original">
                             	<span class="yuan">￥</span><span class="integer">69</span><span class="pointer">.</span><span class="decimal">00</span>
@@ -272,6 +272,7 @@ define(['config'],function(){
 		});
 		
 	//楼梯效果
+		//根据可视区调整楼梯导航位置
 		//下滑到对应的区域，左边导航栏点亮
 		$(window).on('scroll',function(){
 			var $top=$(this).scrollTop();

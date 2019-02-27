@@ -7,7 +7,7 @@ $totalw:100%;
 $wrap:1210px;
 $acolor:#554;
 $size:12px;
-body{
+html,body{
     width: $totalw;
     font-size: $size;
 }
@@ -44,10 +44,11 @@ a{
 #floor {
     width: 35px;
     position: fixed;
-    top: 180px;
-    left: 50px;
+    top: 30%;
+    left: 50%;
+    margin-left: -650px;
     border: 1px solid #ddd;
-    display: no ne;
+    z-index: 99999;
 }
     
 #floor ul li {

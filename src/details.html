@@ -6,6 +6,7 @@
 		<meta name="keyword" content="" />
 		<meta name="anthor" content="" />
 		<title>央广购物详情页</title>
+		<link rel="icon" href="https://statics.cnrmall.com/public//img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
@@ -122,7 +123,7 @@
 										<span class="buy-minus" style="cursor: not-allowed;">
 											<i class="i-minus"></i>
 										</span>
-										<input type="text" name="" id="Buycount" value="1" size="3" maxlength="6" autocomplete="off">
+										<input type="text" name="" id="Buycount" oninput="value=value.replace(/[^\d]/g,'')" value="1" size="3" maxlength="6" autocomplete="off">
 										<span class="buy-add" style="cursor: pointer;">
 											<i class="i-add" style="color:#000;"></i>
 										</span>
@@ -136,8 +137,8 @@
 						<!--购买和加入购物车按钮组-->
 						<div class="goods-btns">
 							<div class="shop-btns">
-								<a href="javascriipt:;" id="buy-btn">立即购买</a>
-								<a href="javascriipt:;" id="add-btn"><i class="add-btn-shopcar"></i>加入购物车</a>
+								<a href="http://10.31.162.68/cnrmall/src/cart.html" id="buy-btn">立即购买</a>
+								<a href="http://10.31.162.68/cnrmall/src/cart.html" id="add-btn"><i class="add-btn-shopcar"></i>加入购物车</a>
 							</div>
 						</div>
 					</div>
