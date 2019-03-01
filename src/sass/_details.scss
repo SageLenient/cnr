@@ -50,6 +50,7 @@
     height: 360px;
     float: left;
     position: relative;
+    cursor: url('../img/zoomin.cur'),auto;
 }
 
 #spic img {
@@ -58,24 +59,25 @@
 }
 
 #sf {
-    width: 50px;
-    height: 50px;
-    background: orange;
-    opacity: 0.3;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    opacity: 0.2;
     position: absolute;
     left: 0px;
     top: 0px;
-    visibility: hidden;
+    display: none;
+    border: 1px solid #999;
 }
 
 #bf {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border: 1px solid #000;
     overflow: hidden;
     position: absolute;
     left: 400px;
-    visibility: hidden;
+    display: none;
     z-index: 10;
 }
 

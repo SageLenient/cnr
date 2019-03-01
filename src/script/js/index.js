@@ -1,7 +1,24 @@
 define(['config'],function(){
-	require(['jquery'],function(){
-	//引入页面头部以及悬浮框
+	require(['jquery','jqcookie'],function(){
+	//引入页面头部
 		$('.top-index').load('top.html',function(){
+		//获取用户名以及cookie
+			if($.cookie('cookiephone') && $.cookie('cookiepass')){
+				var $phone=$.cookie('cookiephone');
+				$.ajax({
+					type:"get",
+					url:"http://10.31.162.68/cnrmall/php/user.php",
+					data:{
+						phone:$phone
+					},
+					async:true
+				}).done(function(d){
+					if (d) {
+						$('.login a:first-child').html('您好：'+d);
+					}
+				});
+			};
+		//悬浮框
 			var bscroll=true;
 			$(window).on('scroll',function(){
 				if($(this).scrollTop()>=800){
@@ -18,6 +35,42 @@ define(['config'],function(){
 					}
 				};
 			});
+		//搜索框
+		//动态创建搜索框函数
+			//https://www.cnrmall.com/search/suggest.json?term=
+			/*var cScript=document.createElement("script");
+			cScript.src="https://www.cnrmall.com/search/suggest.json?term="+$('#search_keyword').val()+'&callback=cnsearch';
+			console.log(cScript);*/			
+			$('#search_keyword').on('input',function(){
+				var $str=$('#search_keyword').val()
+				$.ajax({
+					type:"get",
+					url:'http://10.31.162.68/cnrmall/php/search.php',
+					data:{
+						str:$str
+					},
+					async:true
+				}).done(function(data){
+					var strul='';
+					if(data){
+						$.each(JSON.parse(data), function(index,value) {
+							if (index<5) {
+								strul+=`<li><a href="javascript:;">${value}</a></li>`
+							};
+						});
+					}else{
+						strul='<li><a href="javascript:;">历史纪录</a></li>'
+					};
+					$('.search-pop').show().html(strul);
+				});
+				/*require(["https://www.cnrmall.com/search/suggest.json?term="+$('#search_keyword').val()],function(data){
+					console.log(data);
+				})*///jsonp格式的获取方式
+			});
+			$('#search_keyword').on('blur',function(){
+				$('.search-pop').hide();
+			});
+			
 		});
 	//引入页面尾部
 		$('.footer').load('footer.html');
@@ -127,7 +180,7 @@ define(['config'],function(){
 				`
 			});
 			$('.seckill_list .seckill_ppt').html(strsec);
-	//秒杀区幻灯片效果
+//秒杀区幻灯片效果
 			var seclength=$('.seckill_ppt .sk_items').length;
 			var secnum=seclength%6+6;
 			var secquo=parseInt(seclength/6);
@@ -200,6 +253,29 @@ define(['config'],function(){
 						});
 					};
 					console.log("左:"+secquol,"右:"+secquo);
+				}
+			});
+			//点击左箭头切换
+			$('.sk_prev').on('click',function(){
+				var rx=$('.seckill_ppt').prop('offsetLeft');
+				if (tabclick) {
+					secquo--;
+					secquol++;
+					tabclick=false;
+					if (secquol==1) {
+						$('.seckill_ppt').animate({'left':rx+(secnum-6)*liwidth},function(){
+							$(this).css({'left':(-seclength)*liwidth});
+							tabclick=true;
+						})
+					} else{
+						$('.seckill_ppt').animate({'left':rx+6*liwidth},function(){
+							if (secquol==tempsecquo) {
+								secquol=0;
+								secquo=tempsecquo;
+							};
+							tabclick=true;
+						});
+					};
 				}
 			});
 		//移出隐藏左右切换箭头

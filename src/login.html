@@ -16,7 +16,7 @@
 		<script src="script/thirdplugins/require.js" data-main='script/js/login.js'></script>
 		<div class="header-login">
 			<header class="login-wrap">
-				<h1 class="login-logo"><a href="javascript:;"><img src="img/2c6ce4ec89967ee42ef77fb0b524fc0c.png"></a><span>欢迎登录</span></h1>
+				<h1 class="login-logo"><a href="http://10.31.162.68/cnrmall/src"><img src="img/2c6ce4ec89967ee42ef77fb0b524fc0c.png"></a><span>欢迎登录</span></h1>
 			</header>
 		</div>
 		<!--登录界面logo-->
@@ -38,19 +38,19 @@
 					<div class="login-module">
 						<!--表头-->
 						<ul class="login-nav clear">
-							<li class="longin-active"><a href="javascript">用户登录</a></li>
+							<li class="longin-active"><a href="javascript:;">用户登录</a></li>
 							<li><a href="javascript:;">手机动态码登录</a></li>
 						</ul>
 						<!--表单-->
 						<div class="form-box">
-				            <form id="loginform" class="login-form" name="loginform" method="post">
+				            <form id="loginform" class="login-form" name="loginform">
 				                <div class="form-item">
 				                    <label title="登录账号"></label>
-				                	<input type="text" autocomplete="off" placeholder="手机号/会员名/邮箱">
+				                	<input type="text" autocomplete="off" name="phone" id="phone" placeholder="手机号/会员名/邮箱">
 				                </div>
 				                <div class="form-item">
 				                    <label title="登录密码"></label>
-				                    <input type="password" autocomplete="off" placeholder="输入账户密码">
+				                    <input type="password" name="password" id="password" autocomplete="off" placeholder="输入账户密码">
 				                </div>
 				                <div class="form-item">
 				                    <label title="验证码"></label>
@@ -69,7 +69,7 @@
 				                </div>
 				                <div class="login-click">
 				                    <div class="login-btn">
-				                    	<button class="btn-img" id="login-submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+				                    	<a class="btn-img" id="login-submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
 				                    </div>
 				                </div>
 				            </form>

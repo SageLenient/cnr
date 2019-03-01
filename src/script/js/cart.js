@@ -1,7 +1,24 @@
 define(['config'],function(){
 	require(['jquery','jqcookie'],function(){
 	//引入头部和尾部
-		$('.top').load("top.html .top");
+		$('.top').load("top.html .top",function(){
+		//获取用户名以及cookie
+			if($.cookie('cookiephone') && $.cookie('cookiepass')){
+				var $phone=$.cookie('cookiephone');
+				$.ajax({
+					type:"get",
+					url:"http://10.31.162.68/cnrmall/php/user.php",
+					data:{
+						phone:$phone
+					},
+					async:true
+				}).done(function(d){
+					if (d) {
+						$('.login a:first-child').html('您好：'+d);
+					}
+				});
+			};
+		});
 		$('.header').load("top.html .header");
 		$('#b_wrap').load('footer.html .b_wrap');
 	//引入cookie并渲染页面
